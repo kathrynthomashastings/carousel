@@ -49,6 +49,9 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
             
             // Move the button up above keyboard
             self.buttonParentView.frame.origin.y = self.buttonInitialY + self.buttonOffset
+
+            // Scroll the scrollview up
+            // self.scrollView.contentOffset.y = self.scrollView.contentInset.bottom
             
         }
         
