@@ -9,11 +9,17 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
+    
+    @IBOutlet weak var settingsScrollView: UIScrollView!
+    @IBOutlet weak var backButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        settingsScrollView.contentSize = CGSize(width: 320, height: 1040)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +27,12 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func goBackButton(_ sender: AnyObject) {
+    
+        // dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
+        
+    }
 
     /*
     // MARK: - Navigation

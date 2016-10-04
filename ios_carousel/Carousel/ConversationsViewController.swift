@@ -23,14 +23,12 @@ class ConversationsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    /* 
-    @IBAction func backView(_ sender: AnyObject) {
+    @IBAction func goBackButton(_ sender: AnyObject) {
         
-        //navigationController?.popToRootViewController(animated: true)
-
+        navigationController?.popToRootViewController(animated: true)
+        
     }
-    */
-
+    
     
     
     

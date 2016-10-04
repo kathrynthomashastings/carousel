@@ -15,19 +15,19 @@ Time spent: `<Number of hours spent>`
   - [x] Tapping on email/password reveals the keyboard and shifts the scroll view and Sign In button up.
   - Upon tapping the Sign In button.
      - [x] If the username or password fields are empty, user sees an error alert.
-     - [ ] If credentials are incorrect, user sees a loading indicator for 2 seconds followed by an error alert.
-     - [ ] If the credentials are correct, user sees a loading indicator for 2 seconds followed by a transition to the Sign In screens.
+     - [x] If credentials are incorrect, user sees a loading indicator for 2 seconds followed by an error alert.
+     - [x] If the credentials are correct, user sees a loading indicator for 2 seconds followed by a transition to the Sign In screens.
 1. Tutorial Screens
   - [ ] User can page between the screens.
 1. Image Timeline
-  - [ ] Display a scrollable view of images.
-  - [ ] User can tap on the conversations button to see the conversations screen (push).
-  - [ ] User can tap on the profile image to see the settings view (modal from below).
+  - [x] Display a scrollable view of images.
+  - [x] User can tap on the conversations button to see the conversations screen (push).
+  - [x] User can tap on the profile image to see the settings view (modal from below).
 1. Conversations
-  - [ ] User can dismiss the conversations screen.
+  - [x] User can dismiss the conversations screen.
 1. Settings
-  - [ ] User can dismiss the settings screen.
-  - [ ] User can log out.
+  - [x] User can dismiss the settings screen.
+  - [x] User can log out.
 
 ### Optional User Stories
 

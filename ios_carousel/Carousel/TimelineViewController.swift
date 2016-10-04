@@ -10,10 +10,14 @@ import UIKit
 
 class TimelineViewController: UIViewController {
 
+    @IBOutlet weak var feedScrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        feedScrollView.contentSize = CGSize(width: 320, height: 3158)
     }
 
     override func didReceiveMemoryWarning() {
