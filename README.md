@@ -2,7 +2,7 @@
 
 The purpose of this homework is to leverage views, view properties, and events to create a high fidelity prototype that is difficult to distinguish from a production app. We're going to use the techniques from this week to implement the Carousel app from the signed out state to the basic signed in state.
 
-Time spent: `<Number of hours spent>`
+Time spent: `15`
 
 ### Features
 
@@ -18,7 +18,7 @@ Time spent: `<Number of hours spent>`
      - [x] If credentials are incorrect, user sees a loading indicator for 2 seconds followed by an error alert.
      - [x] If the credentials are correct, user sees a loading indicator for 2 seconds followed by a transition to the Sign In screens.
 1. Tutorial Screens
-  - [ ] User can page between the screens.
+  - [x] User can page between the screens.
 1. Image Timeline
   - [x] Display a scrollable view of images.
   - [x] User can tap on the conversations button to see the conversations screen (push).
@@ -60,19 +60,21 @@ Time spent: `<Number of hours spent>`
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1. 
-2. 
+1. Again, would love to work through optional stories.
+2. Want to fully understand the autosizing settings, i.e. the red lines.
 
 ### Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/SOa7ZB3.gifv' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+* Xcode bugs, autosizing issues, scrollView issues, breakpoints
 
 * Any libraries or borrowed content.

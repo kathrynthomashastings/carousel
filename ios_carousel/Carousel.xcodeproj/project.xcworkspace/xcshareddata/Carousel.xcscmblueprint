@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "557AAC3D43AFE26D56B9B5C3581A2C2078FFA729",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "402EAB2ECDA1AD433DD6D4D69C632CD6CDC5B922" : 9223372036854775807,
+    "557AAC3D43AFE26D56B9B5C3581A2C2078FFA729" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D24693C5-0A88-4300-8E32-2568C0A84520",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "402EAB2ECDA1AD433DD6D4D69C632CD6CDC5B922" : "",
+    "557AAC3D43AFE26D56B9B5C3581A2C2078FFA729" : "ios_carousel\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Carousel",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios_carousel\/Carousel.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pictureelectric\/hasticakes.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "402EAB2ECDA1AD433DD6D4D69C632CD6CDC5B922"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pictureelectric\/ios_carousel.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "557AAC3D43AFE26D56B9B5C3581A2C2078FFA729"
+    }
+  ]
+}
