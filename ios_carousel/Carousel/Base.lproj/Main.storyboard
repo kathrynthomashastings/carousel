@@ -120,13 +120,13 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" misplaced="YES" id="lgf-Ac-ga1" customClass="buttonParentView">
-                                        <rect key="frame" x="0.0" y="433" width="375" height="104"/>
+                                        <rect key="frame" x="0.0" y="334" width="375" height="104"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="sign_in_buttons" id="Xu8-SW-9W6">
@@ -134,11 +134,15 @@
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mRy-za-Zzz" userLabel="Sign In UIButton">
-                                                <frame key="frameInset" minX="47" minY="12" width="280" height="51"/>
+                                                <frame key="frameInset" minX="47" minY="13" width="280" height="51"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="didPressLogin:" destination="5ez-Ez-7ro" eventType="touchUpInside" id="ZJo-JU-690"/>
+                                                    <segue destination="6MT-Br-MIp" kind="modal" identifier="afterLoginSegue" animates="NO" id="Xgd-qF-viE"/>
+                                                </connections>
                                             </button>
-                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="gray" id="tKe-d5-Dik" userLabel="Activity Indicator">
-                                                <frame key="frameInset" minX="290" minY="27" width="20" height="20"/>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="white" id="tKe-d5-Dik" userLabel="Activity Indicator">
+                                                <frame key="frameInset" minX="291" minY="28" width="20" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </activityIndicatorView>
                                         </subviews>
@@ -147,7 +151,7 @@
                                 </subviews>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="YIa-f2-2Nu" appends="YES" id="SHl-jn-csN"/>
+                                    <outletCollection property="gestureRecognizers" destination="iuw-t8-Mu8" appends="YES" id="VpN-Lh-iPD"/>
                                 </connections>
                             </scrollView>
                         </subviews>
@@ -157,15 +161,46 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1331"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="tKe-d5-Dik" id="983-1x-QqV"/>
                         <outlet property="buttonParentView" destination="lgf-Ac-ga1" id="D2N-6h-Qt0"/>
+                        <outlet property="emailTextField" destination="16c-P2-MU7" id="yGc-5M-syo"/>
                         <outlet property="fieldParentView" destination="WPv-Y4-c8V" id="esu-7Z-urb"/>
+                        <outlet property="passwordTextField" destination="Kfb-4R-xbA" id="7RH-X6-A0N"/>
                         <outlet property="scrollView" destination="Cbh-mL-kb6" id="rym-nP-z5u"/>
+                        <outlet property="signInButton" destination="mRy-za-Zzz" id="pFa-FD-Z27"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cL-MP-mAb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="YIa-f2-2Nu"/>
+                <tapGestureRecognizer id="iuw-t8-Mu8">
+                    <connections>
+                        <action selector="didTap:" destination="5ez-Ez-7ro" id="JTI-hK-QGD"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1308.5" y="120.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Hdi-VR-SxT">
+            <objects>
+                <viewController id="6MT-Br-MIp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2yG-HR-mA2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Helloooooooo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dDz-PK-YKy">
+                                <frame key="frameInset" minX="16" minY="211" width="343" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wmV-pK-Z8I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1797.5" y="-212.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lKo-HP-Eil">
