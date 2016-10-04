@@ -123,7 +123,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
 
                     self.activityIndicator.stopAnimating()
 
-                    self.performSegue(withIdentifier: "afterLoginSegue", sender: nil)
+                    self.performSegue(withIdentifier: "postLoginSegue", sender: nil)
 
                 } else {
 
