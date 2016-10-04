@@ -89,8 +89,6 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     
     @IBAction func didPressLogin(_ sender: AnyObject) {
         
-        activityIndicator.stopAnimating()
-        signInButton.isSelected = true
         
         if emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty {
             
@@ -100,47 +98,55 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
             let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
                 // handle response here.
             }
+            
             // add the OK action to the alert controller
             alertController.addAction(OKAction)
             
             present(alertController, animated: true) {
                 // optional code for what happens after the alert controller has finished presenting
             }
-        } else {
-            self.activityIndicator.startAnimating()
             
+        } else {
+            
+            self.activityIndicator.startAnimating()
+
             // Delay for 2 seconds, then run the code between the braces.
             let secondsToDelay = 2.0
+            
             run(after: secondsToDelay) {
+                
                 // This code will run after the delay
-                
-                
-                if self.emailTextField.text == "hi@email.com" && self.passwordTextField.text == "password" {
+
+                if self.emailTextField.text == "hi@gmail.com" && self.passwordTextField.text == "password" {
+                    
                     // Code that runs if both email and password match the text we are looking for in each case
-                    
+
                     self.activityIndicator.stopAnimating()
+
                     self.performSegue(withIdentifier: "afterLoginSegue", sender: nil)
-                    
+
                 } else {
+
                     // Code that runs if either the email or password do NOT match the text we are looking for in each case
                     
                     self.activityIndicator.stopAnimating()
                     
-                    let alertController = UIAlertController(title: "Sign In Failed", message: "Email or password is incorrect.", preferredStyle: .alert)
+                    let alertController = UIAlertController(title: "Sign In Failed", message: "Please enter your email address.", preferredStyle: .alert)
                     
-                    // create a cancel action
-                    let cancelAction = UIAlertAction(title: "OK", style: .cancel) { (action) in
-                        // handle cancel response here. Doing nothing will dismiss the view.
+                    // create an OK action
+                    let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
+                        // handle response here.
                     }
-                    // add the cancel action to the alertController
-                    alertController.addAction(cancelAction)
+                    
+                    // add the OK action to the alert controller
+                    alertController.addAction(OKAction)
                     
                     self.present(alertController, animated: true) {
                         // optional code for what happens after the alert controller has finished presenting
                     }
-
                     
                 }
+                
             }
         }
     }
