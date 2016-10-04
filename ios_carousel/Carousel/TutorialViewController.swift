@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TutorialViewController: UIViewController, UIScrollViewDelegate {
+class TutorialViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
@@ -19,9 +19,9 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
 
         // Do any additional setup after loading the view.
 
-        scrollView.delegate = self
+        // scrollView.delegate = self
         
-        scrollView.contentSize = CGSize(width: 1500, height: 591)
+        scrollView.contentSize = CGSize(width: 1500, height: 667)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,10 +29,12 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    /*
+ func scrollViewDidScroll(_ scrollView: UIScrollView) {
         // This method is called as the user scrolls
         
     }
+ */
 
     /*
     // MARK: - Navigation
